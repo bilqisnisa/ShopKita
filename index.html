@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopKita - Toko Online</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+    
+                                                                                                                                                                                                                                                                                          
+    <!-- navbar -->
+    <header class="navbar">
+        <div class="container nav-content">
+
+            <a href="#" class="logo">
+                <i class="fa-solid fa-bag-shopping"></i>
+                ShopKita
+            </a>
+
+            <nav class="nav-menu">
+                <a href="#home">Home</a>
+                <a href="#produk">Produk</a>
+                <a href="#tentang">Tentang</a>
+                <a href="#kontak">Kontak</a>
+            </nav>
+
+            <div class="nav-actions">
+
+                <button class="icon-btn" id="searchBtn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+
+                <button class="cart-btn" id="cartBtn">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span id="cartCount">0</span>
+                </button>
+
+                <button class="menu-btn" id="menuBtn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- SEARCH -->
+    <div class="search-box" id="searchBox">
+        <div class="container">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari produk..."
+            >
+        </div>
+    </div>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+
+            <div class="hero-text">
+                <span class="badge">PROMO SPESIAL</span>
+
+                <h1>
+                    Belanja Mudah,
+                    <span>Harga Bersahabat</span>
+                </h1>
+
+                <p>
+                    Temukan berbagai produk pilihan berkualitas
+                    dengan harga terbaik hanya di ShopKita.
+                </p>
+
+                <a href="#produk" class="btn-primary">
+                    Belanja Sekarang
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="hero-image">
+                <div class="discount">
+                    <strong>50%</strong>
+                    <small>OFF</small>
+                </div>
+
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- KEUNGGULAN -->
+    <section class="features">
+        <div class="container feature-grid">
+
+            <div class="feature">
+                <i class="fa-solid fa-truck-fast"></i>
+                <div>
+                    <h3>Gratis Ongkir</h3>
+                    <p>Untuk pembelian tertentu</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-shield-halved"></i>
+                <div>
+                    <h3>Pembayaran Aman</h3>
+                    <p>Transaksi dijamin aman</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-headset"></i>
+                <div>
+                    <h3>Customer Service</h3>
+                    <p>Siap membantu Anda</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <i class="fa-solid fa-box-open"></i>
+                <div>
+                    <h3>Produk Berkualitas</h3>
+                    <p>Produk pilihan terbaik</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- PRODUK -->
+    <section class="products-section" id="produk">
+
+        <div class="container">
+
+            <div class="section-header">
+                <div>
+                    <span class="section-label">KOLEKSI KAMI</span>
+                    <h2>Produk Terbaru</h2>
+                </div>
+
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">
+                        Semua
+                    </button>
+
+                    <button class="filter-btn" data-category="fashion">
+                        Fashion
+                    </button>
+
+                    <button class="filter-btn" data-category="elektronik">
+                        Elektronik
+                    </button>
+
+                    <button class="filter-btn" data-category="aksesoris">
+                        Aksesoris
+                    </button>
+                </div>
+            </div>
+
+
+            <div class="product-grid" id="productGrid">
+                <!-- Produk dibuat oleh JavaScript -->
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="tentang">
+
+        <div class="container about-content">
+
+            <div class="about-image">
+                <i class="fa-solid fa-store"></i>
+            </div>
+
+            <div class="about-text">
+                <span class="section-label">TENTANG KAMI</span>
+
+                <h2>Belanja Online Lebih Mudah</h2>
+
+                <p>
+                    ShopKita adalah toko online yang menyediakan
+                    berbagai macam produk berkualitas untuk kebutuhan
+                    sehari-hari.
+                </p>
+
+                <p>
+                    Kami berkomitmen memberikan pengalaman belanja
+                    yang mudah, aman, cepat, dan menyenangkan.
+                </p>
+
+                <button class="btn-primary" onclick="showAboutMessage()">
+                    Selengkapnya
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter" id="kontak">
+
+        <div class="container newsletter-content">
+
+            <div>
+                <h2>Dapatkan Promo Terbaru</h2>
+                <p>
+                    Masukkan email Anda untuk mendapatkan informasi
+                    promo dan produk terbaru.
+                </p>
+            </div>
+
+            <form id="newsletterForm">
+                <input
+                    type="email"
+                    placeholder="Masukkan email Anda"
+                    required
+                >
+
+                <button type="submit">
+                    Subscribe
+                </button>
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container footer-grid">
+
+            <div>
+                <a href="#" class="logo footer-logo">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    ShopKita
+                </a>
+
+                <p>
+                    Toko online terpercaya dengan produk berkualitas
+                    dan harga terbaik.
+                </p>
+            </div>
+
+            <div>
+                <h3>Menu</h3>
+                <a href="#home">Home</a>
+                <a href="#produk">Produk</a>
+                <a href="#tentang">Tentang Kami</a>
+                <a href="#kontak">Kontak</a>
+            </div>
+
+            <div>
+                <h3>Kontak</h3>
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    pati, Jawa Tengah
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    0812-3456-7890
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    hello@shopkita.com
+                </p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 ShopKita. All Rights Reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- CART SIDEBAR -->
+    <div class="overlay" id="overlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+            <h2>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Keranjang
+            </h2>
+
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <p>Keranjang masih kosong</p>
+            </div>
+        </div>
+
+        <div class="cart-footer">
+
+            <div class="cart-total">
+                <span>Total</span>
+                <strong id="cartTotal">Rp0</strong>
+            </div>
+
+            <button class="checkout-btn" id="checkoutBtn">
+                Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- CHECKOUT MODAL -->
+    <div class="modal" id="checkoutModal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="closeModal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+            <h2>Checkout</h2>
+            <p>Lengkapi data berikut untuk melanjutkan.</p>
+
+            <form id="checkoutForm">
+
+                <label>Nama Lengkap</label>
+                <input
+                    type="text"
+                    id="customerName"
+                    placeholder="Nama lengkap"
+                    required
+                >
+
+                <label>Nomor WhatsApp</label>
+                <input
+                    type="tel"
+                    id="customerPhone"
+                    placeholder="08xxxxxxxxxx"
+                    required
+                >
+
+                <label>Alamat Pengiriman</label>
+                <textarea
+                    id="customerAddress"
+                    placeholder="Alamat lengkap"
+                    required
+                ></textarea>
+
+                <label>Metode Pembayaran</label>
+
+                <select id="paymentMethod">
+                    <option value="COD">
+                        COD
+                    </option>
+
+                    <option value="Transfer Bank">
+                        Transfer Bank
+                    </option>
+
+                    <option value="E-Wallet">
+                        E-Wallet
+                    </option>
+                </select>
+
+                <button type="submit" class="btn-primary full">
+                    Buat Pesanan
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMessage">
+            Produk ditambahkan ke keranjang
+        </span>
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

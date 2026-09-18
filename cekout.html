@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+```
+<title>Shop Kita - Keranjang & Checkout</title>
+
+<link rel="stylesheet" href="style.css">
+```
+
+</head>
+
+<body>
+
+```
+<!-- NAVBAR -->
+<header class="navbar">
+
+    <div class="logo">
+        🛍️ <span>Shop Kita</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="index.html#produk">Produk</a>
+        <a href="cekout.html" class="active">
+            🛒 Keranjang
+        </a>
+    </nav>
+
+    <div class="user">
+        👤 Admin
+    </div>
+
+</header>
+
+
+<!-- MAIN -->
+<main class="container">
+
+    <!-- JUDUL -->
+    <div class="page-title">
+
+        <div>
+            <h1>Keranjang Belanja 🛒</h1>
+            <p>Periksa kembali produk sebelum melakukan checkout.</p>
+        </div>
+
+        <a href="index.html#produk" class="continue-shopping">
+            ← Lanjut Belanja
+        </a>
+
+    </div>
+
+
+    <!-- CONTENT -->
+    <div class="checkout-layout">
+
+
+        <!-- KERANJANG -->
+        <section class="cart-section">
+
+            <div class="section-header">
+
+                <h2>Produk di Keranjang</h2>
+
+                <span>
+                    3 Produk
+                </span>
+
+            </div>
+
+
+            <!-- PRODUK 1 -->
+            <div class="cart-item">
+
+                <div class="product-photo">
+                    👕
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Kaos Premium</h3>
+
+                    <p>
+                        Ukuran: L | Warna: Hitam
+                    </p>
+
+                    <strong>
+                        Rp85.000
+                    </strong>
+
+                </div>
+
+
+                <div class="quantity">
+
+                    <button type="button">−</button>
+
+                    <span>1</span>
+
+                    <button type="button">+</button>
+
+                </div>
+
+
+                <div class="item-total">
+                    Rp85.000
+                </div>
+
+
+                <button class="delete" type="button">
+                    🗑️
+                </button>
+
+            </div>
+
+
+            <!-- PRODUK 2 -->
+            <div class="cart-item">
+
+                <div class="product-photo">
+                    👟
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Sepatu Sport</h3>
+
+                    <p>
+                        Ukuran: 42 | Warna: Putih
+                    </p>
+
+                    <strong>
+                        Rp250.000
+                    </strong>
+
+                </div>
+
+
+                <div class="quantity">
+
+                    <button type="button">−</button>
+
+                    <span>1</span>
+
+                    <button type="button">+</button>
+
+                </div>
+
+
+                <div class="item-total">
+                    Rp250.000
+                </div>
+
+
+                <button class="delete" type="button">
+                    🗑️
+                </button>
+
+            </div>
+
+
+            <!-- PRODUK 3 -->
+            <div class="cart-item">
+
+                <div class="product-photo">
+                    🎒
+                </div>
+
+                <div class="product-info">
+
+                    <h3>Tas Casual</h3>
+
+                    <p>
+                        Warna: Cokelat
+                    </p>
+
+                    <strong>
+                        Rp150.000
+                    </strong>
+
+                </div>
+
+
+                <div class="quantity">
+
+                    <button type="button">−</button>
+
+                    <span>1</span>
+
+                    <button type="button">+</button>
+
+                </div>
+
+
+                <div class="item-total">
+                    Rp150.000
+                </div>
+
+
+                <button class="delete" type="button">
+                    🗑️
+                </button>
+
+            </div>
+
+
+            <!-- KODE PROMO -->
+            <div class="promo-box">
+
+                <div>
+                    🎁
+                    <strong>Punya kode promo?</strong>
+                </div>
+
+                <div class="promo-form">
+
+                    <input
+                        type="text"
+                        placeholder="Masukkan kode promo"
+                    >
+
+                    <button type="button">
+                        Gunakan
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RINGKASAN -->
+        <aside class="summary">
+
+            <h2>Ringkasan Pesanan</h2>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Subtotal
+                </span>
+
+                <strong>
+                    Rp485.000
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Diskon
+                </span>
+
+                <strong class="discount">
+                    - Rp25.000
+                </strong>
+
+            </div>
+
+
+            <div class="summary-row">
+
+                <span>
+                    Ongkos Kirim
+                </span>
+
+                <strong>
+                    Rp15.000
+                </strong>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="total">
+
+                <span>
+                    Total Pembayaran
+                </span>
+
+                <strong>
+                    Rp475.000
+                </strong>
+
+            </div>
+
+
+            <!-- CHECKOUT BUTTON -->
+            <button
+                class="checkout-button"
+                type="button"
+            >
+                Lanjut ke Pembayaran →
+            </button>
+
+
+            <div class="secure">
+
+                🔒 Pembayaran aman dan terpercaya
+
+            </div>
+
+        </aside>
+
+    </div>
+
+
+    <!-- INFORMASI PENGIRIMAN -->
+    <section class="shipping">
+
+        <div class="section-header">
+
+            <div>
+                <h2>Informasi Pengiriman 📦</h2>
+
+                <p>
+                    Masukkan data penerima barang.
+                </p>
+            </div>
+
+        </div>
+
+
+        <form>
+
+            <div class="form-grid">
+
+                <div class="form-group">
+
+                    <label for="nama">
+                        Nama Lengkap
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nama"
+                        placeholder="Masukkan nama lengkap"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="telepon">
+                        Nomor Telepon
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="telepon"
+                        placeholder="08xxxxxxxxxx"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group full">
+
+                    <label for="alamat">
+                        Alamat Lengkap
+                    </label>
+
+                    <textarea
+                        id="alamat"
+                        rows="4"
+                        placeholder="Masukkan alamat lengkap..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="kota">
+                        Kota
+                    </label>
+
+                    <input
+                        type="text"
+                        id="kota"
+                        placeholder="Contoh: Jepara"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="kodepos">
+                        Kode Pos
+                    </label>
+
+                    <input
+                        type="text"
+                        id="kodepos"
+                        placeholder="594xx"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- METODE PENGIRIMAN -->
+            <div class="payment-section">
+
+                <h3>Metode Pengiriman</h3>
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="shipping"
+                        value="regular"
+                        checked
+                    >
+
+                    <div>
+                        <strong>
+                            🚚 Reguler
+                        </strong>
+
+                        <small>
+                            Estimasi 2–4 hari
+                        </small>
+                    </div>
+
+                    <span>
+                        Rp15.000
+                    </span>
+
+                </label>
+
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="shipping"
+                        value="express"
+                    >
+
+                    <div>
+                        <strong>
+                            ⚡ Express
+                        </strong>
+
+                        <small>
+                            Estimasi 1–2 hari
+                        </small>
+                    </div>
+
+                    <span>
+                        Rp30.000
+                    </span>
+
+                </label>
+
+            </div>
+
+
+            <!-- METODE PEMBAYARAN -->
+            <div class="payment-section">
+
+                <h3>Metode Pembayaran</h3>
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="transfer"
+                        checked
+                    >
+
+                    <div>
+                        <strong>
+                            🏦 Transfer Bank
+                        </strong>
+
+                        <small>
+                            BCA, BRI, BNI, Mandiri
+                        </small>
+                    </div>
+
+                </label>
+
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="ewallet"
+                    >
+
+                    <div>
+                        <strong>
+                            📱 E-Wallet
+                        </strong>
+
+                        <small>
+                            DANA, OVO, GoPay
+                        </small>
+                    </div>
+
+                </label>
+
+
+                <label class="option">
+
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="cod"
+                    >
+
+                    <div>
+                        <strong>
+                            💵 COD
+                        </strong>
+
+                        <small>
+                            Bayar saat barang diterima
+                        </small>
+                    </div>
+
+                </label>
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="order-button"
+            >
+                🛒 Buat Pesanan
+            </button>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="footer-logo">
+        🛍️ Shop Kita
+    </div>
+
+    <p>
+        Belanja mudah, aman, dan nyaman.
+    </p>
+
+    <p>
+        © 2026 Shop Kita
+    </p>
+
+</footer>
+```
+
+</body>
+</html>
